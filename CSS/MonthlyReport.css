@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	padding:0;
+}
+#Headline1 h1{
+	text-align: center;
+	color: #000;
+	}
+#Headline1{
+	text-align:center;
+	background-color: #33F;
+}
+
+#Search{
+	margin-left:100px;
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+#Table2 table{
+	border: medium;
+	border-bottom-style: groove;
+}
+
+#Detail{
+	margin-left:100px;
+	margin-top:30px;
+	}
+
+#FinalDetails input{text-align:right;}
+#Amount input{
+	text-align: right;	
+}
+#IncomeAmount2{text-align:right;}
+#IncomeAmount1{text-align:right;}
+#Amount2{text-align:right;}
+
+#IncomeDescription1{
+	width:600px;
+}
+#IncomeDescription2{
+	width:600px;
+}
+#Description2{
+	width:600px;
+	}
+#Data {width:200px;}
+#FinalDetails{
+	margin-top:50px;
+	margin-left:100px;}
+	}
+#btn {
+	margin-left: 150px;
+	font-size: 18px;
+	text-align: center;
+	width: 100px;
+	border-radius: 6px;
+	background-color: #33C;
+	color: #FFF;
+	line-height: 30px;
+	height: 40px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+#detail button {
+	margin-left: 300px;
+	font-size: 18px;
+	text-align: center;
+	width: 100px;
+	border-radius: 6px;
+	background-color: #33C;
+	color: #FFF;
+	line-height: 30px;
+	height: 40px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#detail button:hover {
+	background-color: #CCC;
+	color: #009;
+}
+#end{margin-top:200px;}
