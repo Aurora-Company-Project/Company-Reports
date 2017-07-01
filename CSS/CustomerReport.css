@@ -19,6 +19,9 @@ body {
 	margin-top:100px;
 	margin-bottom:100px;
 }
+#Choose{
+	margin-left:20px;
+}
 
 #Table2 table{
 	border: medium;
@@ -31,10 +34,11 @@ body {
 	}
 
 #FinalDetails input{text-align:right;}
+
 #Amount input{
 	text-align: right;
-	
 }
+
 #Detail button {
 	margin-left: 210px;
 	font-size: 18px;
@@ -46,6 +50,7 @@ body {
 	line-height: 30px;
 	height: 40px;
 	margin-top:50px;
+	margin-bottom:200px;
 }
 
 #Detail button:hover {

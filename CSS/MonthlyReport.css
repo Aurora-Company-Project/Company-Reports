@@ -22,6 +22,9 @@ body {
 	margin-top:100px;
 	margin-bottom:100px;
 }
+#Search select{
+	margin-left:20px;
+}
 
 #Table2 table{
 	border: medium;
@@ -53,21 +56,9 @@ body {
 #Data {width:200px;}
 #FinalDetails{
 	margin-top:50px;
-	margin-left:100px;}
+	margin-left:100px;
 	}
-#btn {
-	margin-left: 150px;
-	font-size: 18px;
-	text-align: center;
-	width: 100px;
-	border-radius: 6px;
-	background-color: #33C;
-	color: #FFF;
-	line-height: 30px;
-	height: 40px;
-	margin-top: 50px;
-	margin-bottom: 100px;
-}
+	
 #detail button {
 	margin-left: 300px;
 	font-size: 18px;
@@ -80,10 +71,11 @@ body {
 	height: 40px;
 	margin-top: 50px;
 	margin-bottom: 100px;
+	margin-bottom:200px;
 }
 
 #detail button:hover {
 	background-color: #CCC;
 	color: #009;
 }
-#end{margin-top:200px;}
+

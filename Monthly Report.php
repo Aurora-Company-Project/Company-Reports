@@ -15,26 +15,26 @@
 
 <div id="Search">
 	Select Month :
-  <select>
-    <option value="---------">------</option>
-    <option value="January">January</option>
-      <option value="February">February</option>
-      <option value="March">March</option>
-      <option value="April">April</option>
-      <option value="May">May</option>
-      <option value="June">June</option>
-      <option value="July">July</option>
-      <option value="August">August</option>
-      <option value="September">September</option>
-      <option value="October">October</option>
-      <option value="November">November</option>
-      <option value="December">December</option>
+  	<select>
+      	<option value="---------">------</option>
+      	<option value="January">January</option>
+      	<option value="February">February</option>
+      	<option value="March">March</option>
+      	<option value="April">April</option>
+      	<option value="May">May</option>
+      	<option value="June">June</option>
+      	<option value="July">July</option>
+      	<option value="August">August</option>
+      	<option value="September">September</option>
+      	<option value="October">October</option>
+      	<option value="November">November</option>
+      	<option value="December">December</option>
 	</select>
 </div>
 
 <table id="Table2" align="center" width="805" height="169" border="1">
       <caption>
-      <div align="center">Monthly Payment Report </div>
+ 			<div align="center">Monthly Payment Report </div>
       </caption>
       <tr>  <th>Status</th>
         	<th width="415"><div align="center">Description</div></th>
@@ -50,23 +50,26 @@
       </tr>
       <tr>  <td width="174" align="center">Expenditure</td>
         	<td width="415" height="50"><form><input name="Description2" type="text" id="Description2"></form></td>
-        	<td width="194" align="right"><form>
-       	      <input name="Amount2" type="text" id="Amount2" />
-       	</form></td>
+        	<td width="194" align="right"><form><input name="Amount2" type="text" id="Amount2"></form></td>
       </tr>  
-  </table>
-    <br/>
-
-
-<table id="FinalDetails">
-	<tr><td id="Data">Balance in previous month   :</td><td> <form><input type="text" name="Balance" placeholder="#amount"></form></td></tr>
-  	<tr><td id="Data">Total Income Amount  :</td><td> <form><input type="text" name="search1" placeholder="#amount"></form></td></tr>
-     <tr><td id="Data">Total Expenditure Amount :</td><td><form><input type="text" name="search2" placeholder="#amount"></form></td></tr>
-     <tr><td id="Data">Balance :</td><td><form><input type="text" name="search3" placeholder="#amount"></form></td></tr>
 </table>
-<div id="detail"><button>Done</button></div>
+ 
+<table id="FinalDetails">
+	<tr>	<td id="Data">Balance in previous month   :</td>
+    		<td> <form><input type="text" name="Balance" placeholder="#amount"></form></td>
+    </tr>
+  	<tr>	<td id="Data">Total Income Amount  :</td>
+    		<td> <form><input type="text" name="search1" placeholder="#amount"></form></td>
+    </tr>
+    <tr> 	<td id="Data">Total Expenditure Amount :</td>
+     		<td><form><input type="text" name="search2" placeholder="#amount"></form></td>
+    </tr>
+    <tr>	<td id="Data">Balance :</td>
+    		<td><form><input type="text" name="search3" placeholder="#amount"></form></td>
+    </tr>
+</table>
 
-<div id="end"></div>
+<div id="detail"><button>Done</button></div>
 
 </body>
 </html>

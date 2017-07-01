@@ -15,8 +15,9 @@
 
 <div id="Search">
     <form>
-  		Customer : <input type="text" name="search" placeholder="Search..">
-	</form>
+  		Customer : 
+          <input id="Choose" type="text" name="search" placeholder="Search.." />
+    </form>
 </div>
 
 <div align="center" id="Table2">
@@ -24,30 +25,33 @@
       <caption>
       <div align="center">Custom Payment Report </div>
       </caption>
-      <tr><th>No.</th>
-        <th width="523"><div align="center">Description</div></th>
-        <th width="195"><div align="center">Amount</div></th>
+      
+      <tr>  <th>No.</th>
+        	<th width="523"><div align="center">Description</div></th>
+        	<th width="195"><div align="center">Amount</div></th>
       </tr>
+      
       <tr>  <td width="65"><form ><input type="text" name="Number"></form></td>
-       	<td width="523" height="100"><form id="Description"><input size="100" type="text" name="Description">
-       	</form></td>
+       		<td width="523" height="100"><form id="Description"><input size="100" type="text" name="Description"></form></td>
         	<td width="195"><form id="Amount"><input type="text" name="Amount"></form></td>
       </tr>
-  </table>
-    <br/>
-  </div>
+  	</table>
+</div>
+
 <div id="Detail">
 <table id="FinalDetails">
-  	<tr><td>Payed Amount  :</td><td> <form><input type="text" name="search1" placeholder="#amount"></form></td></tr>
-     <tr><td>Balance Amount :</td>
-     <td><form>
-         <input type="text" name="search2" placeholder="#amount"></form></td></tr>
-     <tr><td>Extra payment Amount :</td>
-     <td><form>
-          <input type="text" name="search3" placeholder="#amount">
-	</form></td></tr>
- </table>
+  	<tr>	<td>Payed Amount  :</td>
+    		<td> <form><input type="text" name="search1" placeholder="#amount"></form></td>
+    </tr>
+    <tr>	<td>Balance Amount :</td>
+     		<td><form><input type="text" name="search2" placeholder="#amount"></form></td>
+    </tr>
+    <tr>	<td>Extra payment Amount :</td>
+     		<td><form><input type="text" name="search3" placeholder="#amount"></form></td>
+    </tr>
+</table>
 <button>Done</button>
 </div>
+
 </body>
 </html>
