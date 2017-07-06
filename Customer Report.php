@@ -14,7 +14,7 @@
 </div>
 
 <div id="Search">
-    <form>
+    <form action="">
   		Customer : 
           <input id="Choose" type="text" name="search" placeholder="Search.." />
     </form>
@@ -31,9 +31,9 @@
         	<th width="195"><div align="center">Amount</div></th>
       </tr>
       
-      <tr>  <td width="65"><form ><input type="text" name="Number"></form></td>
+      <tr>  <td width="65"><form ><input name="Number" type="text" value=""></form></td>
        		<td width="523" height="100"><form id="Description"><input size="100" type="text" name="Description"></form></td>
-        	<td width="195"><form id="Amount"><input type="text" name="Amount"></form></td>
+        	<td width="195"><form id="Amount"><input name="Amount" type="text" value=""]; ?>"></form></td>
       </tr>
   	</table>
 </div>
@@ -47,7 +47,7 @@
      		<td><form><input type="text" name="search2" placeholder="#amount"></form></td>
     </tr>
     <tr>	<td>Extra payment Amount :</td>
-     		<td><form><input type="text" name="search3" placeholder="#amount"></form></td>
+     		<td><form><input name="search3" type="text" placeholder="#amount" value=""></form></td>
     </tr>
 </table>
 <button>Done</button>
