@@ -10,15 +10,15 @@
 	$servername="localhost";
 	$username="root";
 	$password="Vaio@13524";
-	$database="Customers";
+	$database="project";
 	$link=mysqli_connect($servername,$username,$password,$database);
 	
-	/*if($link){
+	if($link){
 		echo "Connect";
 	}else
 	{
 		echo "not connect";
-	}*/
+	}
 ?>
 </body>
 </html>
