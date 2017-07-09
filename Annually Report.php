@@ -1,17 +1,5 @@
-<?php 
-	include 'connection.php';
-	
-
-	
-	$year=$_POST['YearGetter'];
-	$generate=$_POST['generate'];
-
-	if(isset($_POST['generate'])){
-		echo $year;
-		}	
-	
-	
-	
+<?php
+	require 'connection.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -25,7 +13,14 @@
 
 <body>
 <div></div>
-
+<?php
+	$message='';
+	if(isset($_POST['generate'])){
+		$year=$_POST['YearGetter'];
+		$generate=$_POST['generate'];
+		echo $year;
+		}	
+	?>
 <div id="Headline1" align="center">
   <h1>Annual Report</h1>
   <h1>Secretary Office Bemmulla</h1>
@@ -33,14 +28,14 @@
 
 <div id="Getter">
   <p>Type Year </p>
-  <form action="" method="post">
+  <form method="post" id="datagetter">
   		<input name="YearGetter" type="number" id="YearGetter" value=""> <br/>
-  		<button name="generate" type="submit" value="1">Generate</button>
+  		<button name="generate"  value="1">Generate</button>
   </form>
 </div>
 
-<?php if (($generate==1) && (is_numeric($year))) { ?>
-<form action="" method="post">
+<?php if (($generate=='1') && (is_numeric($year))) { ?>
+<form method="post" id="content">
     <table id="Table" align="center" width="805" height="169" border="1">
           <caption>
           <div align="center">Annually Payment Report </div>

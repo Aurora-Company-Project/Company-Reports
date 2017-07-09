@@ -1,9 +1,8 @@
 <?php 
-	include 'connection.php';
-	$month=$_POST['month'];
-	$generate=$_POST['generate'];
 	if(isset($_POST['generate'])){
-		echo $month;
+		include 'connection.php';
+		$month=$_POST['month'];
+		$generate=$_POST['generate'];
 		}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -41,7 +40,7 @@
          <button name="generate" type="submit" value="1"> Generate </button>
 </form>
 
-<?php if (($generate==1) && ($month!='None')) { ?>
+<?php if ((isset($_POST['generate'])) && ($month!='None')) { ?>
     <table id="Table2" align="center" width="805" height="169" border="1">
           <caption>
                 <div align="center">Monthly Payment Report </div>

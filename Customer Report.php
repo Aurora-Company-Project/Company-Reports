@@ -1,3 +1,25 @@
+<?php
+	require 'connection.php';
+
+	$message='';
+	$bool=false;
+	if (isset($_POST['getcustom'])){	
+		$go=$_POST['getcustom'];
+		$search=$_POST['search'];
+		if(!isset($search) || trim($search) == ''){
+			echo "You did not fill out the required fields.";
+		}else{
+			$check_query = "SELECT * FROM customerdetails WHERE fname=$search";
+			$result = mysqli_query($link,$check_query);
+			
+			while($row=mysqli_fetch_array($result)){
+				$address=$row['address'];
+				echo $address ;			
+			}
+		}
+		
+	}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -14,12 +36,14 @@
 </div>
 
 <div id="Search">
-    <form action="">
+    <form action="" id="customgetter" method="post">
   		Customer : 
-          <input id="Choose" type="text" name="search" placeholder="Search.." />
+          <input type="text" name="search" placeholder="Search.." />
+		<button name='getcustom' type="submit" value="1">GO</button>
     </form>
 </div>
 
+<?php if ($bool) { ?>
 <div align="center" id="Table2">
     <table width="805" border="1">
       <caption>
@@ -52,6 +76,6 @@
 </table>
 <button>Done</button>
 </div>
-
+<?php } ?>
 </body>
 </html>
