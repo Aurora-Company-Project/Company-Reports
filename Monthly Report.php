@@ -1,46 +1,30 @@
-<?php 
-	if(isset($_POST['generate'])){
-		include 'connection.php';
-		$month=$_POST['month'];
-		$generate=$_POST['generate'];
-		}
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="CSS/MonthlyReport.css" type="text/css" rel="stylesheet" />
+<link href="Monthly Report Main.css" type="text/php" rel="stylesheet" />
+
 <title>Monthly Report</title>
 </head>
 <body>
-<div></div>
+<div></div> 
 
 <div id="Headline1" align="center">
   <h1>Monthly Report</h1>
   <h1>Secretary Office Bemmulla</h1>
-</div>
+</div> 
 
 <form action="" method="post">
-    	Select Month :
-        <select name="month">
-             <option value="None">None</option>
-             <option value="January">January</option>
-             <option value="February">February</option>
-             <option value="March">March</option>
-             <option value="April">April</option>
-             <option value="May">May</option>
-             <option value="June">June</option>
-             <option value="July">July</option>
-             <option value="August">August</option>
-             <option value="September">September</option>
-             <option value="October">October</option>
-             <option value="November">November</option>
-             <option value="December">December</option>
-         </select>
-         <button name="generate" type="submit" value="1"> Generate </button>
+    	Selected Month :
+        <?php
+			if (isset($_POST['generate'])){	
+				$generate = $_POST['generate'];
+				echo $generate;
+			}
+		?>
 </form>
 
-<?php if ((isset($_POST['generate'])) && ($month!='None')) { ?>
     <table id="Table2" align="center" width="805" height="169" border="1">
           <caption>
                 <div align="center">Monthly Payment Report </div>
@@ -77,8 +61,8 @@
                 <td><form><input type="text" name="search3" placeholder="#amount"></form></td>
         </tr>
     </table>
-    <div id="detail" ><button onclick="window.print()" type="button">Done</button></div>
-<?php } ?>
+    <div id="detail" ><button type="button">Done</button></div> 
 </body>
+
 </html>
 

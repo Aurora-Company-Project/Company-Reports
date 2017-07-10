@@ -1,6 +1,6 @@
 <?php
 	require 'connection.php';
-
+	
 	$message='';
 	$bool=false;
 	if (isset($_POST['getcustom'])){	
@@ -9,15 +9,14 @@
 		if(!isset($search) || trim($search) == ''){
 			echo "You did not fill out the required fields.";
 		}else{
-			$check_query = "SELECT * FROM customerdetails WHERE fname=$search";
+			$check_query = "SELECT * FROM assesment_tax_detail WHERE id='$search'";
 			$result = mysqli_query($link,$check_query);
 			
 			while($row=mysqli_fetch_array($result)){
-				$address=$row['address'];
-				echo $address ;			
+				$name=$row['name'];
+				echo $name ;			
 			}
 		}
-		
 	}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
