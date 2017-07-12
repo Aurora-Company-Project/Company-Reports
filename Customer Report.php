@@ -13,7 +13,7 @@
 			$result = mysqli_query($link,$check_query);
 			
 			while($row=mysqli_fetch_array($result)){
-				$name=$row['name'];
+				$name=$row['owner_name'];
 				echo $name ;			
 			}
 		}

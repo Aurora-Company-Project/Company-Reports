@@ -9,8 +9,8 @@
 <?php
 	$servername="localhost";
 	$username="root";
-	$password="Vaio@13524";
-	$database="project";
+	$password="";
+	$database="project_ds";
 	$link=mysqli_connect($servername,$username,$password,$database);
 	
 	if($link){
